@@ -10,9 +10,9 @@ logging:
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/board
-    username: hong
-    password: khk04252311
+    password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
   jpa:
     defer-datasource-initialization: true
     hibernate.ddl-auto: create
@@ -24,7 +24,8 @@ spring:
   data.rest:
       base-path: /api
       detection-strategy: annotated
-
+  thymeleaf3:
+    decoupled-logic: true
 
 
 
